@@ -7,7 +7,6 @@ This repository contains the available extension catalogues for the Mangayomi ap
 Click on one of the buttons below to add the corresponding repository/repositories:
 
 
-
 <a href="https://intradeus.github.io/http-protocol-redirector?r=mangayomi://add-repo?repo_name=mangayomi extensions%26repo_url=https://raw.githubusercontent.com/DanielDRN/Repository-MangaYomi/refs/heads/main/anime_index.json)"><img alt="Add anime repository" src="images/add-anime-repository.png" height="35"></a>
 
 <a href="https://intradeus.github.io/http-protocol-redirector?r=mangayomi://add-repo?repo_name=mangayomi-extensions%26repo_url=https://github.com/m2k3a/mangayomi-extensions%26novel_url=https://m2k3a.github.io/mangayomi-extensions/novel_index.json"><img alt="Add novel repository" src="images/add-novel-repository.png" height="35"></a>
