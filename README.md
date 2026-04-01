@@ -41,6 +41,20 @@ novel repo
 https://m2k3a.github.io/mangayomi-extensions/novel_index.json
 ```
 
+---
+
+### Use your local/custom version (recommended when testing)
+
+1. Generate local JSON:
+   - `dart run source_generator.dart`
+   - (opcional) `python filter_anime_by_lang.py --lang en --infile anime_index.json --outfile anime_index.en.json`
+2. Publica en URL directa raw (gists, GitHub Pages o ngrok):
+   - ejemplo: `https://gist.githubusercontent.com/<tu-usuario>/<id>/raw/anime_index.en.json`
+3. En la app, agrega ese URL raw en **More -> Settings -> Browse**.
+4. Refresca/cierra y abre la app para cargar en caliente.
+
+> Importante: la URL original (`m2k3a...`) siempre usará el contenido oficial actual, no los cambios locales de tu equipo.
+
 
 ## License
 
