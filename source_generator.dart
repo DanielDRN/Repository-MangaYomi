@@ -18,7 +18,7 @@ void main() {
 
 void genManga(List<Source> jsMangasourceList) {
   List<Source> mangaSources = [];
-  // Dart sources are handled externally, only add JS sources
+  // Only add JS sources, ignore existing file content
   mangaSources.addAll(jsMangasourceList);
   final List<Map<String, dynamic>> jsonList = mangaSources
       .map((source) => source.toJson())
@@ -33,7 +33,7 @@ void genManga(List<Source> jsMangasourceList) {
 
 void genAnime(List<Source> jsAnimesourceList) {
   List<Source> animeSources = [];
-  // Dart sources are handled externally, only add JS sources
+  // Only add JS sources, ignore existing file content
   animeSources.addAll(jsAnimesourceList);
   final List<Map<String, dynamic>> jsonList = animeSources
       .map((source) => source.toJson())
@@ -48,7 +48,7 @@ void genAnime(List<Source> jsAnimesourceList) {
 
 void genNovel(List<Source> jsNovelSourceList) {
   List<Source> novelSources = [];
-  // Dart sources are handled externally, only add JS sources
+  // Only add JS sources, ignore existing file content
   novelSources.addAll(jsNovelSourceList);
   final List<Map<String, dynamic>> jsonList = novelSources
       .map((source) => source.toJson())
