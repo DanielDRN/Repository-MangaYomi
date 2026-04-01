@@ -82,12 +82,14 @@ List<Source> _searchJsSources(Directory dir) {
               try {
                 for (var sourceJson in jsonDecode(match.group(1)!) as List) {
                   final langs = sourceJson["langs"] as List?;
+                  const gitOwner = 'DanielDRN';
+                  const gitRepo = 'MangaYomi';
                   Source source = Source.fromJson(sourceJson)
                     ..sourceCodeLanguage = 1
                     ..appMinVerReq =
                         sourceJson["appMinVerReq"] ?? defaultSource.appMinVerReq
                     ..sourceCodeUrl =
-                        "https://raw.githubusercontent.com/DanielDRN/MangaYomi/$branchName/javascript/${sourceJson["pkgPath"] ?? sourceJson["pkgName"] ?? sourceJson["name"]?.toLowerCase().replaceAll(" ", "") ?? "unknown"}";
+                        "https://raw.githubusercontent.com/$gitOwner/$gitRepo/$branchName/javascript/${sourceJson["pkgPath"] ?? sourceJson["pkgName"] ?? sourceJson["name"]?.toLowerCase().replaceAll(" ", "") ?? "unknown"}";
                   if (sourceJson["id"] != null) {
                     source = source..id = int.tryParse("${sourceJson["id"]}");
                   }
